@@ -2,7 +2,7 @@
   "name": "react-devilish",
   "version": "1.0.0",
   "description": "A devilishly simple react/flux/node/express scaffold",
-  "main": "client/js/app.js",
+  "main": "client/Root.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnBartos/React-Devilish.git"
