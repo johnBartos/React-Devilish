@@ -12,6 +12,7 @@ const Card = React.createClass({
       <div className="card">
         <div className="card-body">
           {this.props.card.body}
+          {this.props.card.time}
         </div>
       </div>
     );

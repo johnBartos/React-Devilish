@@ -5,10 +5,11 @@ const CardConstants = require('../constants/CardConstants');
 const CHANGE_EVENT = 'change';
 const _cards = {};
 
-function create(text) {
+function create(data) {
   const id = (Date.now() + Math.floor(Math.random() * 999999)).toString(36);
   _cards[id] = {
-    body: text
+    body: data.body,
+    time: data.time
   };
 }
 
@@ -30,7 +31,7 @@ const CardStore = Object.assign({}, EventEmitter.prototype, {
 AppDispatcher.register((action) => {
   switch (action.actionType) {
     case CardConstants.CREATE_CARD:
-      create(action.body);
+      create(action.data);
       CardStore.emitChange();
       break;
 
