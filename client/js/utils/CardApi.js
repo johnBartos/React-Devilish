@@ -1,6 +1,6 @@
 const rp = require('request-promise');
 
-const get = () => {
+const getTime = () => {
   const options = {
     uri: 'http://localhost:4000/api/cards/time',
     method: 'GET',
@@ -11,5 +11,5 @@ const get = () => {
 };
 
 module.exports = {
-  get: get
+  getTime: getTime
 };

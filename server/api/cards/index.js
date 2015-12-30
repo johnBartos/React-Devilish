@@ -1,7 +1,9 @@
 const router = require('express').Router();
 
-router.get('/cards/time', () => {
-  return Date.now();
+router.get('/time', (req, res) => {
+  res.status(200).json({
+    time: Date.now()
+  });
 });
 
 module.exports = router;

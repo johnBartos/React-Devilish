@@ -11,11 +11,9 @@ const App = React.createClass({
     return (
       <section className="App">
         <div className="container-fluid">
-          <div className="row-fluid">
-            <h1>HELLO CRUEL WORLD</h1>
-            <CardGrid
-              />
-          </div>
+          <h1>HELLO CRUEL WORLD</h1>
+          <CardGrid
+            />
         </div>
         {this.props.children}
       </section>

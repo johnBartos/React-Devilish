@@ -14,13 +14,15 @@ const CardMaker = React.createClass({
   },
   render: function renderCardMaker() {
     return (
-      <div className="row">
-        <div className="col-xs-3">
-          <div className="input-group">
-            <input type="text" className="form-control" name="cardMakerInput" value={this.state.value} onChange={this.handleChange}></input>
-            <span className="input-group-btn">
-              <button className="btn btn-secondary" type="submit" onClick={this.onPress}>BUILD IT</button>
-            </span>
+      <div className="container-fluid">
+        <div className="row-fluid">
+          <div className="col-xs-3">
+            <div className="input-group">
+              <input type="text" className="form-control" name="cardMakerInput" value={this.state.value} onChange={this.handleChange}></input>
+              <span className="input-group-btn">
+                <button className="btn btn-secondary" type="submit" onClick={this.onPress}>BUILD IT</button>
+              </span>
+            </div>
           </div>
         </div>
       </div>

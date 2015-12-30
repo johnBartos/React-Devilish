@@ -23,7 +23,7 @@ const CardGrid = React.createClass({
     const cards = [];
     const allCards = this.state.allCards;
 
-    for (var card in allCards) {
+    for (var card of allCards) {
       cards.push(<Card key={card} card={allCards[card]} />);
     }
 

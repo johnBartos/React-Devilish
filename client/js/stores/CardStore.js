@@ -6,8 +6,8 @@ const CHANGE_EVENT = 'change';
 const _cards = {};
 
 function create(data) {
-  const id = (Date.now() + Math.floor(Math.random() * 999999)).toString(36);
-  _cards[id] = {
+  _cards[data.time] = {
+    id: data.time,
     body: data.body,
     time: data.time
   };
