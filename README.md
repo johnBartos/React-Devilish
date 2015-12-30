@@ -1,5 +1,5 @@
 # React-Devilish
-A devilishly simple React/Flux/Node/Express scaffold
+A devilishly simple fullstack React example
 
 ### The Stack
 * React
