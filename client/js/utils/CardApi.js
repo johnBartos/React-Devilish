@@ -11,5 +11,5 @@ const getTime = () => {
 };
 
 module.exports = {
-  getTime: getTime
+  getTime
 };

@@ -9,7 +9,7 @@ const CardActions = {
         AppDispatcher.dispatch({
           actionType: CardConstants.CREATE_CARD,
           data: {
-            body: body,
+            body,
             time: JSON.parse(response).time
           }
         });

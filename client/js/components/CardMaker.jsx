@@ -1,10 +1,9 @@
 const React = require('react');
 const CardActions = require('../actions/CardActions');
 
-
 const CardMaker = React.createClass({
   getInitialState: () => {
-    return { value: 'THE CARD SAYS' };
+    return { value: 'the card says' };
   },
   handleChange: function handleChange(event) {
     this.setState({ value: event.target.value });
@@ -14,15 +13,13 @@ const CardMaker = React.createClass({
   },
   render: function renderCardMaker() {
     return (
-      <div className="container-fluid">
-        <div className="row-fluid">
-          <div className="col-xs-3">
-            <div className="input-group">
-              <input type="text" className="form-control" name="cardMakerInput" value={this.state.value} onChange={this.handleChange}></input>
-              <span className="input-group-btn">
-                <button className="btn btn-secondary" type="submit" onClick={this.onPress}>BUILD IT</button>
-              </span>
-            </div>
+      <div className="row cardMaker">
+        <div className="col-xs-12">
+          <div className="input-group">
+            <input type="text" className="form-control" name="cardMakerInput" value={this.state.value} onChange={this.handleChange}></input>
+            <span className="input-group-btn">
+              <button className="btn btn-secondary" type="submit" onClick={this.onPress}>BUILD IT</button>
+            </span>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 const React = require('react');
 const PropTypes = React.PropTypes;
+const CardMaker = require('./components/CardMaker.jsx');
 const CardGrid = require('./components/CardGrid.jsx');
 
 const App = React.createClass({
@@ -10,8 +11,10 @@ const App = React.createClass({
   render: function renderApp() {
     return (
       <section className="App">
-        <div className="container-fluid">
-          <h1>HELLO CRUEL WORLD</h1>
+        <div className="container main">
+          <h1 className="text-xs-center">HELLO CRUEL WORLD</h1>
+          <CardMaker
+          />
           <CardGrid
             />
         </div>

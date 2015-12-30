@@ -1,7 +1,6 @@
 const React = require('react');
 const Card = require('../components/Card.jsx');
 const CardStore = require('../stores/CardStore');
-const CardMaker = require('../components/CardMaker.jsx');
 
 function getCardState() {
   return {
@@ -23,15 +22,15 @@ const CardGrid = React.createClass({
     const cards = [];
     const allCards = this.state.allCards;
 
-    for (var card of allCards) {
-      cards.push(<Card key={card} card={allCards[card]} />);
+    for (var card in allCards) {
+      if (allCards.hasOwnProperty(card)) {
+        cards.push(<Card key={card} card={allCards[card]} />);
+      }
     }
 
     return (
-      <div className="container-fluid">
-        <div className="row-fluid">
-          <CardMaker
-          />
+      <div className="row">
+        <div className="col-xs-12">
           <div className="card-columns">
             {cards}
           </div>
