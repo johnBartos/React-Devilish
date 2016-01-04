@@ -5,6 +5,12 @@ const generator = generators.Base.extend({
     this.props = {};
   },
   writing: function write() {
+    this.directory('client', 'client');
+    this.directory('server', 'server');
+    this.directory('files', '.');
+  },
+  installingDependencies: function installDependencies() {
+
   }
 });
 
