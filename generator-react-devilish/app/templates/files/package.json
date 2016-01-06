@@ -33,7 +33,7 @@
     "yeoman-generator": "^0.22.2"
   },
   "scripts": {
-    "watch-client": "watchify -o client/bundle.js -v -d client/js/root.js",
+    "watch-client": "watchify -o client/bundle.js -v -d client/root.js",
     "watch-server": "nodemon server/app.js",
     "build": "browserify . -t [reactify --es6] > client/bundle.js",
     "start": "npm-run-all --parallel watch-client watch-server"

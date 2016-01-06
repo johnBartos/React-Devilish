@@ -10,7 +10,7 @@ const generator = generators.Base.extend({
     this.directory('files', '.');
   },
   installingDependencies: function installDependencies() {
-
+    this.npmInstall();
   }
 });
 
