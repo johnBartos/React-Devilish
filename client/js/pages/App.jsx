@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = React.PropTypes;
-const CardMaker = require('./components/CardMaker.jsx');
-const CardGrid = require('./components/CardGrid.jsx');
+const CardMaker = require('../components/CardMaker.jsx');
+const CardGrid = require('../components/CardGrid.jsx');
 
 const App = React.createClass({
   propTypes: {
