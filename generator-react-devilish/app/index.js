@@ -7,7 +7,7 @@ const generator = generators.Base.extend({
   writing: function write() {
     this.directory('client', 'client');
     this.directory('server', 'server');
-    this.directory('files', '.');
+    this.directory('scripts', '.');
   },
   installingDependencies: function installDependencies() {
     this.npmInstall();

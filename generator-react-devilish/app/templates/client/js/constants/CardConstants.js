@@ -1,6 +1,6 @@
 const actions = {
   CREATE_CARD: 'CREATE_CARD',
-  CREATE_CARD_FAILED: 'CREATE_CARD_FAILED'
+  CARD_CREATE_FAILED: 'CARD_CREATE_FAILED'
 };
 
 module.exports = actions;

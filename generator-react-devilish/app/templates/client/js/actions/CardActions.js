@@ -16,9 +16,9 @@ const CardActions = {
       })
       .catch((reason) => {
         AppDispatcher.dispatch({
-          actionType: CardConstants.CREATE_CARD_FAILED,
+          actionType: CardConstants.CARD_CREATE_FAILED,
           reason
-        });
+        })
       });
   }
 };
