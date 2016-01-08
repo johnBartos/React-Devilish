@@ -15,7 +15,10 @@ const CardActions = {
         });
       })
       .catch((reason) => {
-        console.log('failed to create card ' + reason);
+        AppDispatcher.dispatch({
+          actionType: CardConstants.CREATE_CARD_FAILED,
+          reason
+        });
       });
   }
 };
