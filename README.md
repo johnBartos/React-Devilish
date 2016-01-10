@@ -1,6 +1,12 @@
 # React-Devilish
 A devilishly simple fullstack React example. I made this because I wanted a simple, lightweight scaffold for my future web projects - it avoids being all-in-one megaproject for making the Next Big Thing™. It also servers as a "cheat-sheet" for some best practices. There's no testframework included, so you'll definitely want to get one of those yourself. 
 
+##Installing
+yo insall react-devilish
+npm install
+
+That's it!
+
 ### The Stack
 * React
 * Flux
@@ -18,6 +24,3 @@ A devilishly simple fullstack React example. I made this because I wanted a simp
 * npm run build to build the client with browserify
 * npm run watch-client to watchify
 * npm run watch-client to nodemon
-
-
-More to come!
