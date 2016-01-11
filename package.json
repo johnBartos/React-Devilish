@@ -1,9 +1,9 @@
 {
   "name": "generator-react-devilish",
   "author": "John Bartos",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "A devilishly simple fullstack React scaffold",
-  "main": "generator-react-devilish/app/index.js",
+  "main": "app/index.js",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
     "flux"
   ],
   "homepage": "https://github.com/johnBartos/React-Devilish#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.22.2"
+  },
   "devDependencies": {
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^2.1.1",
-    "yeoman-generator": "^0.22.2"
+    "eslint-config-airbnb": "^2.1.1"
   }
 }
