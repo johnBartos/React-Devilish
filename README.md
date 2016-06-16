@@ -23,4 +23,4 @@ That's it!
 * npm run start to run nodemon & watchify in parallel
 * npm run build to build the client with browserify
 * npm run watch-client to watchify
-* npm run watch-client to nodemon
+* npm run watch-server to nodemon
